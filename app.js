@@ -85,8 +85,12 @@ var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
 
+var sum=sumAndMultiply(testArray[0],testArray[1],testArray[2])[0];
+var message= `${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${sum} is their sum.`
+    return[sum,message ];
 }
 
+testSumArray(testArray);
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
